@@ -57,8 +57,8 @@ try:
         print("cmd time: %6.3f" % command_time)
         print("")
 
-except KeyboardInterrupt as ex:
-    print("ge90_test: KeyboardInterrupt", file=sys.stderr)
+except KeyboardInterrupt:
+    print("modem_test: KeyboardInterrupt", file=sys.stderr)
 
 finally:
     print("off...")

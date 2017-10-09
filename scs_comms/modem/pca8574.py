@@ -95,6 +95,11 @@ class PCA8574State(PersistentJSONable):
     classdocs
     """
 
+    @classmethod
+    def filename(cls, host):
+        return None
+
+
     # ----------------------------------------------------------------------------------------------------------------
 
     @classmethod
@@ -125,6 +130,8 @@ class PCA8574State(PersistentJSONable):
         """
         Constructor
         """
+        super().__init__()
+
         self.__byte = byte                  # int
 
 
