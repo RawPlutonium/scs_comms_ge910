@@ -79,7 +79,7 @@ class PCA8574(object):
         state = PCA8574State.load_from_file(self.__filename)
 
         state.byte = byte
-        state.save(self.__filename)
+        state.save_to_file(self.__filename)
 
 
     # ----------------------------------------------------------------------------------------------------------------

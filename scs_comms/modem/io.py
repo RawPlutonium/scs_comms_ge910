@@ -57,7 +57,7 @@ class IO(object):
         """
         Constructor
         """
-        self.__device = PCA8574.construct(IO.ADDR, self.filename())      # device is none if it can't be accessed
+        self.__device = PCA8574.construct(IO.ADDR, self.filename())      # device is None if it can't be accessed
 
 
     # ----------------------------------------------------------------------------------------------------------------
