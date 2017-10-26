@@ -63,7 +63,7 @@ class GE910(object):
         # print("executing: %s" % command)
 
         try:
-            self.__serial.open(GE910.__SERIAL_TIMEOUT)
+            self.__serial.open(GE910.__SERIAL_TIMEOUT, GE910.__SERIAL_TIMEOUT)
 
             response = None
             time.sleep(0.3)
